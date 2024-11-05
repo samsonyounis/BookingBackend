@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @org.springframework.stereotype.Controller
-@CrossOrigin("*")
+@CrossOrigin
 public class Controller {
 @CrossOrigin
     @GetMapping("/")

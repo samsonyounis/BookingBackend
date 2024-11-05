@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin("*")
+@CrossOrigin
 public class ReservationController {
     private final ReservationService reservationService;
 @CrossOrigin

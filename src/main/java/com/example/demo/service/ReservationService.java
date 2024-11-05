@@ -47,8 +47,8 @@ public class ReservationService {
         paiementRepo.save(paiement);
         //send notifcation
         String to = dto.getEmail();
-        String subject = "Reservation Notification";
-        String message = " you have succeffully booked the room";
+        String subject = "Avis de réservation";
+        String message = " vous avez réservé la chambre avec succès";
         notificationService.sendEmail(to,subject,message);
         Email email = Email.builder()
                 .dateEnvoi(dto.getDateArriv())

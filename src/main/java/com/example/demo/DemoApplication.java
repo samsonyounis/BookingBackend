@@ -22,7 +22,8 @@ public class DemoApplication {
                 registry.addMapping("/api/v1/**")
                         .allowedOrigins("https://samsonyounis.github.io")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
             }
         };
     }

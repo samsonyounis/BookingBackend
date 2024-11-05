@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin("https://samsonyounis.github.io")
 public class ReservationController {
     private final ReservationService reservationService;
-@CrossOrigin("https://samsonyounis.github.io")
     @PostMapping("/reserve")
     public boolean saveReservation(@RequestBody Dto dto){
         log.info("saving reservation data: "+ dto);

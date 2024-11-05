@@ -20,7 +20,7 @@ public class DemoApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/v1/**")
-                        .allowedOrigins("*","https://samsonyounis.github.io")
+                        .allowedOrigins("https://samsonyounis.github.io")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }

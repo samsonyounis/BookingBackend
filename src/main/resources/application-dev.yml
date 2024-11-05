@@ -4,7 +4,7 @@ spring:
     username: fesd70apbgx0iiit
     password: jnshebjn0huussh1
     hikari:
-      maximum-pool-size: 30       # Adjust as necessary within your limit
+      maximum-pool-size: 5      # Adjust as necessary within your limit
       idle-timeout: 10000         # 10 seconds
       max-lifetime: 30000         # 30 seconds
       connection-timeout: 10000

@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1")
-@CrossOrigin
+@CrossOrigin("https://samsonyounis.github.io")
 public class ReservationController {
     private final ReservationService reservationService;
-@CrossOrigin
+@CrossOrigin("https://samsonyounis.github.io")
     @PostMapping("/reserve")
     public boolean saveReservation(@RequestBody Dto dto){
         log.info("saving reservation data: "+ dto);

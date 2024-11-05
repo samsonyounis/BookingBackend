@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @org.springframework.stereotype.Controller
 @CrossOrigin("*")
 public class Controller {
-
+@CrossOrigin
     @GetMapping("/")
     public String homePage(){
         return "index.html";
